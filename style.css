@@ -1,0 +1,608 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+   width: 100%;
+   overflow-x: hidden;
+   height: 100%;
+}
+.chat-container {
+  width: 100%;
+    margin: auto;
+    background: white;
+    border: 1px solid E5E5EA;
+    border-top: none;
+    border-radius: 10px;
+    padding: 10px;
+    height: 100%;
+}
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E5E5EA;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+   width: 100%;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   outline: none;
+height: 68px;
+gap: 0px;
+opacity: 0px;
+
+}
+
+.chat-header img {
+    border-radius: 50%;
+    Width: 40px;
+    Height:40px;
+    margin-right: -8px; /* To overlap the images */
+ 
+}
+.chat-header div {
+    display: flex;
+    align-items: center;
+}
+.chat-header .team-name {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: absolute;
+    left: 45%;
+    width: Hug (142px)px;
+height: Hug (36px)px;
+top: 17px;
+gap: 4px;
+opacity: 0px;
+
+}
+
+.chat-header .team-name h2{
+    width: 200px;
+height: 18px;
+gap: 0px;
+opacity: 0px;
+
+font-family: Eloquia Text;
+font-size: 24px;
+font-weight: 600;
+line-height: 18px;
+/* text-align: center; */
+/* margin-right: 25px; */
+transform: translateX(-22px);
+padding-top: 18px;
+margin-bottom: 20px;
+color: #2C2C2E;
+}
+.chat-header .team-name p{
+    position: relative;
+    top: -30px;
+    color: #666668;
+font-family: Eloquia Text;
+font-size: 20px;
+font-weight: 400;
+line-height: 14.26px;
+text-align: left;
+width: 250px;
+height: 14px;
+gap: 0px;
+opacity: 0px;
+   word-spacing: 3px;
+   margin-top: 15px;
+   /* margin-left: 30px; */
+}
+.dots{
+    /* Icon */
+
+position: absolute;
+width: 22px;
+height: 16px;
+top: 56px;
+   right: 30px;
+gap: 0px;
+opacity: 0px;
+  cursor: pointer;
+}
+.date{
+    width: 62px;
+height: 14px;
+top: 17px;
+left: 50%;
+gap: 0px;
+transform: translateX(-53%);
+opacity: 0px;
+position: relative;
+font-family: Eloquia Text;
+font-size: 14px;
+font-weight: 400;
+line-height: 14.26px;
+text-align: left;
+color: #666668;
+   padding-bottom: 70px;
+}
+.chat-message {
+    display: flex;
+    margin-bottom: 10px;
+}
+.chat-message img {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 32px;
+    height: 32px;
+    gap: 0px;
+    opacity: 0px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.chat-bubble {
+    background: #f1f0f0;
+    border-radius: 10px 10px 10px 0px;
+    padding: 10px;
+    max-width: 350px;
+    height: 60px;
+    position: relative;
+    z-index: 1;
+    width: Hug (167px)px;
+gap: 0px;
+opacity: 0px;
+margin-top: 20px;
+
+}
+
+.chat-bubble > p{
+    transform: translateY(-50px);
+}
+.chat-bubble .clock{
+    color: #666668;
+    transform: translateY(-70px);
+
+}
+
+.txt{
+
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+.txt h3{
+    transform: translate(-25px , -26px);
+    font-weight: 600;
+    font-size: 18px;
+   color: #2C2C2E;
+}
+
+.txt p{
+    transform: translate(-23px , -20px);
+    columns: #666668;
+    font-size: 15px;
+    font-weight: 400;
+}
+.tix{
+    width: 106%;
+    background: inherit;
+    height: 45px;
+    position: absolute;
+    z-index: -1;
+    top: -15px;
+    left: -16px;
+    /* border-right: dashed; */
+    border-radius: 0 0 0 98%;
+}
+
+.chat-bubble.you {
+    width: Hug (152px)px;
+height: Hug (39px)px;
+padding: 4px 0px 4px 8px;
+gap: 0px;
+border-radius: 6px 0px 6px 6px;
+opacity: 0px;
+width: 200px;
+height: Hug (39px)px;
+top: 51px;
+gap: 0px;
+z-index: 1;
+opacity: 0px;
+background-color:  #007AFF;
+color: #FFFFFF;
+margin-bottom: 5px;
+padding-bottom: 10px;
+   padding:  0 25px;
+   transform: translateX(507%); /* توسيط العنصر أفقيًا */
+
+}
+.chat-bubble.you  p{
+    transform: translateY(50%);
+}
+.tip{
+    width: 106%;
+    background: inherit;
+    height: 45px;
+    position: absolute;
+    z-index: -1;
+    top: -15px;
+    left: 0px;
+    /* border-right: dashed; */
+    border-radius: 0 0 98% 0;
+}
+.check-container {
+    position: relative;
+    display: inline-block; /* للحفاظ على علامات الصح بجانب الوقت */
+    margin-left: 200px;
+    top: -25px;
+}
+
+.check-container .check {
+    position: absolute;
+
+}
+
+.check-container .check:nth-child(1) {
+    left: 0;
+}
+
+.check-container .check:nth-child(2) {
+    left: 5px; /* تعديل هذا القيمة لضبط التراكب */
+}
+
+/* .chat-bubble.you::after {
+    left: auto;
+    right: -10px;
+    border-color: transparent transparent transparent #dcf8c6;
+} */
+.chat-time {
+    font-size: 12px;
+    color:#FFFFFF;
+    margin-top: 5px;
+    position: relative;
+    top: 4px;
+    left: 135px;
+    font-weight: 400;
+    font-size: 14px;
+}
+.chat-typing {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #E5E5EA;
+    padding-top: 10px;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+.chat-typing input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    /* border-radius: 20px; */
+    background: #FFFFFF;
+    margin-right: 10px;
+}
+.chat-typing .emoji{
+    margin-left: 20px;
+}
+.chat-typing .yaho , .chat-typing .send{
+    margin-right: 60px;
+}
+.chat-typing .yaho{
+   transform: translateX(40px);
+}
+.chat-typing input:focus {
+    outline: none;
+}
+
+@media(max-width:1290px) {
+    .chat-bubble.you {
+
+        transform: translateX(385%); /* توسيط العنصر أفقيًا */
+    }   
+    .date{
+transform: translateX(-30%);
+
+    }
+}
+
+@media(max-width:1287px) {
+    .chat-bubble.you {
+
+        transform: translateX(380%); /* توسيط العنصر أفقيًا */
+    }   
+}
+@media(max-width:1266px) {
+    .chat-bubble.you {
+
+        transform: translateX(370%); /* توسيط العنصر أفقيًا */
+    }   
+}
+@media(max-width:1243px) {
+    .chat-bubble.you {
+
+        transform: translateX(360%); /* توسيط العنصر أفقيًا */
+    }   
+}
+@media(max-width:1226px) {
+    .chat-bubble.you {
+
+        transform: translateX(350%); /* توسيط العنصر أفقيًا */
+    }   
+}
+
+@media(max-width:1192px) {
+    .chat-bubble.you {
+
+        transform: translateX(335%); /* توسيط العنصر أفقيًا */
+    }   
+}
+
+@media(max-width:1155px) {
+    .chat-bubble.you {
+
+        transform: translateX(320%); /* توسيط العنصر أفقيًا */
+    }   
+ 
+}
+
+@media(max-width:1116px) {
+    .chat-bubble.you {
+
+        transform: translateX(310%); /* توسيط العنصر أفقيًا */
+    }   
+
+            
+}
+
+@media(max-width:1097px) {
+    .chat-bubble.you {
+
+        transform: translateX(300%); /* توسيط العنصر أفقيًا */
+    }   
+}
+
+@media(max-width:1070px) {
+    .chat-bubble.you {
+
+        transform: translateX(290%); /* توسيط العنصر أفقيًا */
+    }   
+}
+@media(max-width:1070px) {
+    .chat-bubble.you {
+
+        transform: translateX(280%); /* توسيط العنصر أفقيًا */
+    }   
+}
+@media(max-width:1047px) {
+    .chat-bubble.you {
+
+        transform: translateX(280%); /* توسيط العنصر أفقيًا */
+    }   
+}
+@media(max-width:1047px) {
+    .chat-bubble.you {
+
+        transform: translateX(270%); /* توسيط العنصر أفقيًا */
+    }   
+}
+
+@media(max-width:994px) {
+    .chat-bubble.you {
+
+        transform: translateX(260%); /* توسيط العنصر أفقيًا */
+    }   
+    .date{
+        transform: translateX(-15%);
+        
+            }
+}
+@media(max-width:971px) {
+    .chat-bubble.you {
+
+        transform: translateX(250%); /* توسيط العنصر أفقيًا */
+    }   
+}
+@media(max-width:948px) {
+    .chat-bubble.you {
+
+        transform: translateX(240%); /* توسيط العنصر أفقيًا */
+    }   
+}
+@media(max-width:923px) {
+    .chat-bubble.you {
+
+        transform: translateX(230%); /* توسيط العنصر أفقيًا */
+    }   
+}
+@media(max-width:893px) {
+    .chat-bubble.you {
+
+        transform: translateX(220%); /* توسيط العنصر أفقيًا */
+    }   
+}
+@media(max-width:870px) {
+    .chat-bubble.you {
+
+        transform: translateX(210%); /* توسيط العنصر أفقيًا */
+    }   
+}
+@media(max-width:848px) {
+    .chat-bubble.you {
+
+        transform: translateX(200%); /* توسيط العنصر أفقيًا */
+    }   
+}
+@media(max-width:820px) {
+    .chat-bubble.you {
+        margin-bottom: 70px;
+
+        transform: translateX(190%); /* توسيط العنصر أفقيًا */
+    }   
+}
+@media(max-width:795px) {
+    .chat-bubble.you {
+
+        transform: translateX(180%); /* توسيط العنصر أفقيًا */
+    }   
+}
+@media(max-width:773px) {
+    .chat-bubble.you {
+
+        transform: translateX(170%); /* توسيط العنصر أفقيًا */
+    }   
+}
+@media(max-width:752px) {
+    .chat-bubble.you {
+
+        transform: translateX(160%); /* توسيط العنصر أفقيًا */
+    }   
+}
+
+@media(max-width:743px) {
+    .chat-bubble.you {
+
+        transform: translateX(150%); /* توسيط العنصر أفقيًا */
+    }   
+}
+
+@media(max-width:696px) {
+    .chat-bubble.you {
+        margin-bottom: 70px;
+        transform: translateX(120%); /* توسيط العنصر أفقيًا */
+    }   
+    .chat-header img{
+        width: 24px;
+        height: 24px;
+    }
+    .chat-header .team-name{
+      transform: translateX(-35px);
+    }
+}
+
+@media(max-width:622px) {
+    .chat-bubble.you {
+     margin-bottom: 70px;
+        transform: translateX(100%); /* توسيط العنصر أفقيًا */
+    }  
+    .chat-header img{
+        width: 24px;
+        height: 24px;
+    }
+    .chat-header .team-name{
+      transform: translateX(-35px);
+    
+    } 
+    .chat-header .team-name h2{
+        font-size: 18px;
+    }
+    .chat-header .team-name p{
+        font-size: 16px;
+    }
+    .date{
+        transform: translateX(-30%);
+        
+            }
+}
+@media(max-width:610px) {
+        .date{
+            transform: translateX(-40%);
+                }
+}
+@media(max-width:568px) {
+    .chat-bubble.you {
+     margin-bottom: 70px;
+        transform: translateX(70%); /* توسيط العنصر أفقيًا */
+    }   
+    .chat-header img{
+        width: 24px;
+        height: 24px;
+    }
+    .chat-header .team-name{
+      transform: translateX(-40px);
+    }
+}
+
+@media(max-width:495px) {
+    .chat-bubble.you {
+     margin-bottom: 70px;
+        transform: translateX(50%); /* توسيط العنصر أفقيًا */
+    }   
+
+    .team-name{
+       transform: translateX(-20px);
+    }
+    .chat-header img{
+        width: 24px;
+        height: 24px;
+    }
+    .chat-header .team-name{
+      transform: translateX(-45px);
+    }
+    .date{
+        transform: translateX(-59%);
+        
+            }
+}
+
+@media(max-width:442px) {
+    .chat-bubble.you {
+     margin-bottom: 70px;
+        transform: translateX(40%);
+       
+       /* توسيط العنصر أفقيًا */
+    }  
+    .team-name{
+        transform: translateX(-20px);
+     } 
+     .chat-header img{
+        width: 24px;
+        height: 24px;
+    }
+    .chat-header .team-name{
+      transform: translateX(-50px);
+    }
+    .chat-header .team-name h2{
+        font-size: 16px;
+    }
+    .chat-header .team-name p{
+        font-size: 14px;
+    }
+    .dots{
+        width: 18px;
+    }
+}
+
+@media(max-width:420px) {
+    .chat-bubble.you {
+     margin-bottom: 70px;
+        transform: translateX(30%);
+       
+       /* توسيط العنصر أفقيًا */
+    }  
+    .team-name{
+        transform: translateX(-40px);
+     } 
+}
+
+@media(max-width:395px) {
+    .chat-bubble.you {
+     margin-bottom: 70px;
+        transform: translateX(20%);
+       
+       /* توسيط العنصر أفقيًا */
+    }  
+    .team-name{
+        transform: translateX(-50px);
+     } 
+}
+
+@media(max-width:377px) {
+    .chat-bubble.you {
+     margin-bottom: 70px;
+        transform: translateX(15%);
+       
+       /* توسيط العنصر أفقيًا */
+    }  
+    .team-name{
+        transform: translateX(-50px);
+     } 
+}
