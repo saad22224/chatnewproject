@@ -1,3 +1,7 @@
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
@@ -481,7 +485,8 @@ transform: translateX(-30%);
         height: 24px;
     }
     .chat-header .team-name{
-      transform: translateX(-35px);
+      transform: translateX(-80px);
+      transform: translateY(-20px);
     }
 }
 
