@@ -548,6 +548,18 @@ transform: translateX(-30%);
         transform: translateX(-59%);
         
             }
+            .large{
+             padding: 30px 0 ;
+            }
+            .large > div >h3{
+                margin-left: 15px;
+            }
+            .large > div >p{
+                margin-left: 15px;
+            }
+            .large .para{
+                margin-left: 15px;
+            }
 }
 
 @media(max-width:442px) {
