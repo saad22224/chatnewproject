@@ -22,7 +22,8 @@ body {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #E5E5EA;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin-bottom: 10px;
    width: 100%;
    border-top: none;
@@ -32,7 +33,10 @@ body {
 height: 68px;
 gap: 0px;
 opacity: 0px;
-
+position: fixed;
+  z-index: 10000;
+  background-color: #FFFFFF;
+  top: 0;
 }
 
 .chat-header img {
@@ -52,13 +56,14 @@ opacity: 0px;
     flex-direction: column;
     gap: 0;
     position: absolute;
-    left: 45%;
+    left: 42%;
     width: Hug (142px)px;
 height: Hug (36px)px;
 top: 17px;
 gap: 4px;
 opacity: 0px;
-
+/* transform: translateX(-20px); */
+  transform: translateY(-20px);
 }
 
 .chat-header .team-name h2{
@@ -75,7 +80,7 @@ line-height: 18px;
 /* margin-right: 25px; */
 transform: translateX(-22px);
 padding-top: 18px;
-margin-bottom: 20px;
+margin-bottom: 30px;
 color: #2C2C2E;
 }
 .chat-header .team-name p{
@@ -102,7 +107,7 @@ position: absolute;
 width: 22px;
 height: 16px;
 top: 56px;
-   right: 30px;
+   right: 40px;
 gap: 0px;
 opacity: 0px;
   cursor: pointer;
@@ -110,7 +115,7 @@ opacity: 0px;
 .date{
     width: 62px;
 height: 14px;
-top: 17px;
+top: 110px;
 left: 50%;
 gap: 0px;
 transform: translateX(-53%);
@@ -282,9 +287,11 @@ padding-bottom: 10px;
 }
 .chat-typing .emoji{
     margin-left: 20px;
+    cursor: pointer;
 }
 .chat-typing .yaho , .chat-typing .send{
     margin-right: 60px;
+    cursor: pointer;
 }
 .chat-typing .yaho{
    transform: translateX(40px);
