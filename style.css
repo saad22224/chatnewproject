@@ -482,7 +482,49 @@ transform: translateX(-30%);
 @media(max-width:696px) {
     .chat-bubble.you {
         margin-bottom: 70px;
-        transform: translateX(120%); /* توسيط العنصر أفقيًا */
+        transform: translateX(145%); /* توسيط العنصر أفقيًا */
+    }   
+    .chat-header img{
+        width: 24px;
+        height: 24px;
+    }
+    .chat-header .team-name{
+      transform: translateX(-80px);
+      transform: translateY(-20px);
+    }
+}
+@media(max-width:661px) {
+    .chat-bubble.you {
+        margin-bottom: 70px;
+        transform: translateX(140%); /* توسيط العنصر أفقيًا */
+    }   
+    .chat-header img{
+        width: 24px;
+        height: 24px;
+    }
+    .chat-header .team-name{
+      transform: translateX(-80px);
+      transform: translateY(-20px);
+    }
+}
+@media(max-width:645px) {
+    .chat-bubble.you {
+        margin-bottom: 70px;
+        transform: translateX(135%); /* توسيط العنصر أفقيًا */
+    }   
+    .chat-header img{
+        width: 24px;
+        height: 24px;
+    }
+    .chat-header .team-name{
+      transform: translateX(-80px);
+      transform: translateY(-20px);
+    }
+}
+@media(max-width:631px) {
+    .chat-bubble.you {
+        margin-bottom: 70px;
+        transform: translateX(130%); /* توسيط العنصر أفقيًا */
     }   
     .chat-header img{
         width: 24px;
@@ -497,7 +539,7 @@ transform: translateX(-30%);
 @media(max-width:622px) {
     .chat-bubble.you {
      margin-bottom: 70px;
-        transform: translateX(100%); /* توسيط العنصر أفقيًا */
+        transform: translateX(125%); /* توسيط العنصر أفقيًا */
     }  
     .chat-header img{
         width: 24px;
@@ -522,11 +564,72 @@ transform: translateX(-30%);
         .date{
             transform: translateX(-40%);
                 }
+                .chat-bubble.you {
+                    margin-bottom: 70px;
+                       transform: translateX(120%); /* توسيط العنصر أفقيًا */
+                   }   
+}
+@media(max-width:597px) {
+        .date{
+            transform: translateX(-40%);
+                }
+                .chat-bubble.you {
+                    margin-bottom: 70px;
+                       transform: translateX(115%); /* توسيط العنصر أفقيًا */
+                   }   
+}
+@media(max-width:580px) {
+        .date{
+            transform: translateX(-40%);
+                }
+                .chat-bubble.you {
+                    margin-bottom: 70px;
+                       transform: translateX(110%); /* توسيط العنصر أفقيًا */
+                   }   
 }
 @media(max-width:568px) {
     .chat-bubble.you {
      margin-bottom: 70px;
-        transform: translateX(70%); /* توسيط العنصر أفقيًا */
+        transform: translateX(100%); /* توسيط العنصر أفقيًا */
+    }   
+    .chat-header img{
+        width: 24px;
+        height: 24px;
+    }
+    .chat-header .team-name{
+      transform: translateX(-40px);
+    }
+}
+@media(max-width:547px) {
+    .chat-bubble.you {
+     margin-bottom: 70px;
+        transform: translateX(90%); /* توسيط العنصر أفقيًا */
+    }   
+    .chat-header img{
+        width: 24px;
+        height: 24px;
+    }
+    .chat-header .team-name{
+      transform: translateX(-40px);
+    }
+}
+@media(max-width:520px) {
+    .chat-bubble.you {
+     margin-bottom: 70px;
+        transform: translateX(85%); /* توسيط العنصر أفقيًا */
+    }   
+    .chat-header img{
+        width: 24px;
+        height: 24px;
+    }
+    .chat-header .team-name{
+      transform: translateX(-40px);
+    }
+}
+@media(max-width:509px) {
+    .chat-bubble.you {
+     margin-bottom: 70px;
+        transform: translateX(80%); /* توسيط العنصر أفقيًا */
     }   
     .chat-header img{
         width: 24px;
@@ -540,7 +643,73 @@ transform: translateX(-30%);
 @media(max-width:495px) {
     .chat-bubble.you {
      margin-bottom: 70px;
-        transform: translateX(50%); /* توسيط العنصر أفقيًا */
+        transform: translateX(70%); /* توسيط العنصر أفقيًا */
+    }   
+
+    .team-name{
+       transform: translateX(-20px);
+    }
+    .chat-header img{
+        width: 24px;
+        height: 24px;
+    }
+    .chat-header .team-name{
+      transform: translateX(-45px);
+    }
+    .date{
+        transform: translateX(-59%);
+        
+            }
+            .large{
+             padding: 30px 0 ;
+            }
+            .large > div >h3{
+                margin-left: 15px;
+            }
+            .large > div >p{
+                margin-left: 15px;
+            }
+            .large .para{
+                margin-left: 15px;
+            }
+}
+@media(max-width:470px) {
+    .chat-bubble.you {
+     margin-bottom: 70px;
+        transform: translateX(65%); /* توسيط العنصر أفقيًا */
+    }   
+
+    .team-name{
+       transform: translateX(-20px);
+    }
+    .chat-header img{
+        width: 24px;
+        height: 24px;
+    }
+    .chat-header .team-name{
+      transform: translateX(-45px);
+    }
+    .date{
+        transform: translateX(-59%);
+        
+            }
+            .large{
+             padding: 30px 0 ;
+            }
+            .large > div >h3{
+                margin-left: 15px;
+            }
+            .large > div >p{
+                margin-left: 15px;
+            }
+            .large .para{
+                margin-left: 15px;
+            }
+}
+@media(max-width:455px) {
+    .chat-bubble.you {
+     margin-bottom: 70px;
+        transform: translateX(60%); /* توسيط العنصر أفقيًا */
     }   
 
     .team-name{
@@ -574,7 +743,34 @@ transform: translateX(-30%);
 @media(max-width:442px) {
     .chat-bubble.you {
      margin-bottom: 70px;
-        transform: translateX(40%);
+        transform: translateX(55%);
+       
+       /* توسيط العنصر أفقيًا */
+    }  
+    .team-name{
+        transform: translateX(-20px);
+     } 
+     .chat-header img{
+        width: 24px;
+        height: 24px;
+    }
+    .chat-header .team-name{
+      transform: translateX(-50px);
+    }
+    .chat-header .team-name h2{
+        font-size: 16px;
+    }
+    .chat-header .team-name p{
+        font-size: 14px;
+    }
+    .dots{
+        width: 18px;
+    }
+}
+@media(max-width:431px) {
+    .chat-bubble.you {
+     margin-bottom: 70px;
+        transform: translateX(50%);
        
        /* توسيط العنصر أفقيًا */
     }  
@@ -602,7 +798,7 @@ transform: translateX(-30%);
 @media(max-width:420px) {
     .chat-bubble.you {
      margin-bottom: 70px;
-        transform: translateX(30%);
+        transform: translateX(40%);
        
        /* توسيط العنصر أفقيًا */
     }  
@@ -614,7 +810,18 @@ transform: translateX(-30%);
 @media(max-width:395px) {
     .chat-bubble.you {
      margin-bottom: 70px;
-        transform: translateX(20%);
+        transform: translateX(35%);
+       
+       /* توسيط العنصر أفقيًا */
+    }  
+    .team-name{
+        transform: translateX(-50px);
+     } 
+}
+@media(max-width:382px) {
+    .chat-bubble.you {
+     margin-bottom: 70px;
+        transform: translateX(30%);
        
        /* توسيط العنصر أفقيًا */
     }  
@@ -624,6 +831,28 @@ transform: translateX(-30%);
 }
 
 @media(max-width:377px) {
+    .chat-bubble.you {
+     margin-bottom: 70px;
+        transform: translateX(25%);
+       
+       /* توسيط العنصر أفقيًا */
+    }  
+    .team-name{
+        transform: translateX(-50px);
+     } 
+}
+@media(max-width:358px) {
+    .chat-bubble.you {
+     margin-bottom: 70px;
+        transform: translateX(20%);
+       
+       /* توسيط العنصر أفقيًا */
+    }  
+    .team-name{
+        transform: translateX(-50px);
+     } 
+}
+@media(max-width:347px) {
     .chat-bubble.you {
      margin-bottom: 70px;
         transform: translateX(15%);
