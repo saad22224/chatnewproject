@@ -296,15 +296,12 @@ padding-bottom: 10px;
 }
 .chat-typing .emoji{
     margin-left: 20px;
-        height: auto;
-        width: auto;
     cursor: pointer;
 }
 .chat-typing .yaho , .chat-typing .send{
     margin-right: 60px;
     cursor: pointer;
-    height: auto;
-    width: auto;
+
 }
 .chat-typing .yaho{
    transform: translateX(40px);
@@ -867,4 +864,37 @@ transform: translateX(-30%);
     .team-name{
         transform: translateX(-50px);
      } 
+}
+
+
+@media(max-width:423px) {
+  .yaho{
+   margin-top: 14px;
+  }
+  .send{
+    transform: translateX(40px);
+  /* margin-bottom: 17px; */
+  }
+  .chat-typing{
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 50px;
+  }
+}
+@media(max-width:415px) {
+  .yaho{
+  position: absolute;  
+  right: 10%;
+    top: 10%;
+}
+  .send{
+    position: absolute; 
+    right: 1%;
+    top: 35%;
+  }
+  .chat-typing{
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 50px;
+  }
 }
