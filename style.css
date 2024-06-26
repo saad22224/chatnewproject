@@ -296,14 +296,15 @@ padding-bottom: 10px;
 }
 .chat-typing .emoji{
     margin-left: 20px;
-
-    height: 16px;
+        height: auto;
+        width: auto;
     cursor: pointer;
 }
 .chat-typing .yaho , .chat-typing .send{
     margin-right: 60px;
     cursor: pointer;
-
+    height: auto;
+    width: auto;
 }
 .chat-typing .yaho{
    transform: translateX(40px);
