@@ -884,12 +884,12 @@ transform: translateX(-30%);
 @media(max-width:415px) {
   .yaho{
   position: absolute;  
-  right: 10%;
+  right: 13%;
     top: 10%;
 }
   .send{
     position: absolute; 
-    right: 1%;
+    right: 0%;
     top: 35%;
   }
   .chat-typing{
